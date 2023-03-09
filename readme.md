@@ -26,7 +26,7 @@ The home page can be accessed by navigating to the root URL (`/`). It has a simp
 
 ### Pokemon Stats Page
 
-The Pokemon stats page can be accessed by navigating to `/pokemon`. On this page, there is an input field where you can search for the desired Pokemon. Once you have entered the name of the Pokemon, press the "Submit" button. This will use the `useParams` hook to display the stats of the selected Pokemon.
+The Pokemon stats page can be accessed by navigating to `/pokemons`. On this page, there is an input field where you can search for the desired Pokemon. Once you have entered the name of the Pokemon, press the "Submit" button. This will use the `useParams` hook to display the stats of the selected Pokemon.
 
 ## Dependencies
 
