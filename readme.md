@@ -18,7 +18,7 @@ The app has two pages. The first page is the home page with a landing, and the s
 
 ### Navbar
 
-The navbar component can be found in `src/components/Navbar.js`. It uses `NavLink` from `react-router-dom` to navigate to the different pages in the app.
+The navbar component can be found in `src/components/NavBar.jsx`. It uses `NavLink` from `react-router-dom` to navigate to the different pages in the app.
 
 ### Home Page
 
