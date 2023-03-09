@@ -1,0 +1,16 @@
+
+.app{
+  font-family: 'Roboto', sans-serif;
+}
+.active{
+  color: #FFDE00
+}
+.inactive{
+  color: white
+}
+.inactiveMobile{
+  color: black
+}
+.activeMobile{
+  color: #FF0000
+}
