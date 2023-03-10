@@ -3,6 +3,7 @@ import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Pokemons from './pages/Pokemons'
 import PokemonStats from './pages/PokeStats'
+import Page404 from './pages/Page404'
 import  DataContextProvider  from './context/ContextApi'
 import './App.css'
 import '@fontsource/roboto/300.css';
@@ -23,9 +24,8 @@ function App() {
           <Route path="/pokemons" element={<Pokemons />}>
             <Route path="/pokemons/:name" element={<PokemonStats/>} />
           </Route>
-
+          <Route path="*" element={<Page404 />} />
         </Routes>
-
       </div>
     </DataContextProvider>
   )

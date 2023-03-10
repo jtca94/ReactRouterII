@@ -4,7 +4,9 @@ import { styled } from "@mui/material/styles";
 
 
 
-export default function PokemonCard(pokemon) {
+
+
+export default function PokemonCard({pokemon}) {
 
     const Item = styled('div')(({ theme }) => ({
         ...theme.typography.body2,
@@ -12,11 +14,14 @@ export default function PokemonCard(pokemon) {
         color: theme.palette.text.secondary,
     }));
 
-    const { name, sprites, types, stats, abilities } = pokemon.pokemon;
-
+    const { name, sprites, types, stats, abilities } = pokemon;
+   
+    
 
 
     return (
+        <>
+            
         <Container sx={{ mt: 3 }} >
             <Grid container spacing={3} >
 
@@ -27,7 +32,7 @@ export default function PokemonCard(pokemon) {
 
                         <Box
                             component='img'
-                            src={sprites.other.dream_world.front_default}
+                            src={sprites.other['official-artwork'].front_default}
                             alt={name}
                             sx={{ width: '100%', height: 'auto', alignContent: 'center', display: 'inline', mx: 'auto' }}
                         />
@@ -65,7 +70,7 @@ export default function PokemonCard(pokemon) {
 
             </Grid>
         </Container>
-
-
+            
+        </>
     )
 }

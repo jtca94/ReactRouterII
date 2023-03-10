@@ -20,15 +20,13 @@ export default function Pokemons() {
                 >
                     Selecciona un Pokémon
                 </Typography>
-
+                {/*componente que contiene el input de busqueda */}
                 <InputSearch />
-
-
-
             </Container>
-
+            {/* este operador ternario evita que al entrar a la pagina pokemons ejecute el useEffect al renderizar el componente
+            evitando asi un error 404 en consola al no existir un params que consumir */}
             {show === false ? null : <PokemonStats />}
-            
+
         </>
 
     )

@@ -84,6 +84,10 @@ function DrawerAppBar(props) {
                     >
                         PokeDex
                     </Typography>
+                    <Box 
+                        sx={{ width: 'auto', height: 40, mr: 2}}
+                        component='img'
+                        src='/images/brandImg.png'/>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map(({ name, path }) => (
 
