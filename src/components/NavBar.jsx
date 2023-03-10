@@ -18,7 +18,7 @@ import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import { NavLink } from 'react-router-dom';
 import { useDataContext } from '../context/ContextApi';
 
-import '../app.css'
+
 
 const drawerWidth = 240;
 const navItems = [{ name: 'Home', path: '/' }, { name: 'Pokemons', path: '/pokemons' }];
