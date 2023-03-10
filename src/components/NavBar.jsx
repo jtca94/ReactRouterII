@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 
 import { NavLink } from 'react-router-dom';
+import { useDataContext } from '../context/ContextApi';
 
 import '../app.css'
 
@@ -25,6 +26,7 @@ const navItems = [{ name: 'Home', path: '/' }, { name: 'Pokemons', path: '/pokem
 function DrawerAppBar(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { handleShow } = useDataContext();    
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -43,6 +45,7 @@ function DrawerAppBar(props) {
                     <ListItem key={name} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
                             <NavLink
+                                onClick={handleShow}
                                 className={({isActive}) => isActive ? 'activeMobile' : 'inactiveMobile'}
                                 to={path}
                                 style={{ textDecoration: 'none' }}>
@@ -57,7 +60,7 @@ function DrawerAppBar(props) {
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
-
+               
     return (
         <Box sx={{ display: 'flex'}}>
             <CssBaseline />
@@ -86,6 +89,7 @@ function DrawerAppBar(props) {
 
                             <Button key={name} >
                                 <NavLink
+                                    onClick={handleShow}
                                     className={({isActive}) => isActive ? 'active' : 'inactive'}
                                     style={{ textDecoration: 'none' }}
                                     to={path}
