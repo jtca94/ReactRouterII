@@ -12,8 +12,8 @@ export default function Pokemons() {
 
     const { show } = useDataContext();
     return (
-        <>
-            <Container maxWidth='sm'>
+        <Container sx={{minHeight: '80vh'}}>
+            <Container maxWidth='sm' sx={{ minHeight: '75%' }} >
                 <Typography
                     variant="h4"
                     sx={{ textAlign: 'center', my: 3 }}
@@ -26,8 +26,7 @@ export default function Pokemons() {
             {/* este operador ternario evita que al entrar a la pagina pokemons ejecute el useEffect al renderizar el componente
             evitando asi un error 404 en consola al no existir un params que consumir */}
             {show === false ? null : <PokemonStats />}
+        </Container>
 
-        </>
-
-    )
+            )
 }

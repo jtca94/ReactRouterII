@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Pokemons from './pages/Pokemons'
 import PokemonStats from './pages/PokeStats'
@@ -26,6 +27,7 @@ function App() {
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
+        <Footer/>
       </div>
     </DataContextProvider>
   )

@@ -14,3 +14,9 @@
 .activeMobile{
   color: #FF0000
 }
+.bgFooter{
+  background-color: #CC0000;
+}
+.heightContainer{
+  height: 90vh;
+}
