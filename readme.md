@@ -1,6 +1,7 @@
 # PokeStats App
 
 This is a simple React application that consumes the PokeAPI to show the stats of different Pokemons. It uses Vite as the build tool, MUI (Material UI) for styling, and React Router for navigation.
+To se the deploy go to https://main--papaya-sprite-f4881c.netlify.app/
 
 ## Installation
 
