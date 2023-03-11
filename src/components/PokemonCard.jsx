@@ -50,7 +50,7 @@ export default function PokemonCard({pokemon}) {
                         <Typography variant="h4" sx={{ mt: 2, ml: 3 }}>Habilidades</Typography>
                         <Divider />
                         <List>
-                            {abilities.map((ability) => <ListItem key={ability.ability.name} >{ability.ability.name}</ListItem>)}
+                            {abilities.map((ability) => <ListItem key={ability.ability.name} >{ability.ability.name.charAt(0).toUpperCase() + ability.ability.name.slice(1) }</ListItem>)}
                         </List>
                     </Item>
                 </Grid>
@@ -61,7 +61,7 @@ export default function PokemonCard({pokemon}) {
                         <Typography variant="h4" sx={{ mt: 2, ml: 3 }}>Stats</Typography>
                         <Divider />
                         <List>
-                            {stats.map((stat) => <ListItem key={stat.stat.name} >{stat.stat.name}:  +<b>{stat.base_stat}</b></ListItem>)}
+                            {stats.map((stat) => <ListItem key={stat.stat.name} >{stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1)}:  +<b>{stat.base_stat}</b></ListItem>)}
                         </List>
 
                     </Item>
