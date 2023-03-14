@@ -3,7 +3,7 @@ import { Typography } from "@mui/material"
 import { Box } from "@mui/system"
 import { Link } from "react-router-dom"
 
-export default function Home() {
+export default function Page404() {
     return (
         <Container maxWidth='sm' >
             <Typography
